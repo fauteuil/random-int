@@ -19,7 +19,7 @@ Build completed at Wed Jun 26 2019 19:13:22 GMT-0700 (Pacific Daylight Time)
 Import the plugin in `webpack-config.js`:
 
 ```
-import BuildTimestampPlugin from "webpack-build-timestamp";
+import { BuildTimestampPlugin } from "webpack-build-timestamp";
 ```
 
 Add it to the plugins array in `webpack-config.js`:
