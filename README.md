@@ -1,4 +1,4 @@
-# Latest build plugin
+# Webpack build timestamp plugin
 
 A simple timestamp log after webpack builds.
 
