@@ -13,16 +13,16 @@ Build completed at Wed Jun 26 2019 19:13:22 GMT-0700 (Pacific Daylight Time)
 ## Installation
 `npm install webpack-build-timestamp --save-dev`  
   or  
-`yarn add webpack-build-timestamp --save-dev`
+`yarn add webpack-build-timestamp`  
 
 ## Usage
-Import the plugin in your webpack config:
+Import the plugin in `webpack-config.js`:
 
 ```
-import BuildTimestampPlugin = from "webpack-build-timestamp";
+import BuildTimestampPlugin from "webpack-build-timestamp";
 ```
 
-And add it to your plugins array:
+Add it to the plugins array in `webpack-config.js`:
 ```
 plugins: [
   new BuildTimestampPlugin();
