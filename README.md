@@ -1,6 +1,6 @@
 # Webpack build timestamp plugin
 
-A simple timestamp log after webpack builds.
+A simple webpack plugin that logs a timestamp to the console after each build.
 
 ```
   ...
