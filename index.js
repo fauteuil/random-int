@@ -1,9 +1,9 @@
 class BuildTimestampPlugin {
-	apply = (compiler) => {
+	apply(compiler) {
 		compiler.hooks.done.tap(
 			"BuildTimestampPlugin",
 			(compilation, callback) => {
-				console.log(`Build completed at ${new Date()}`);
+				console.log('\x1b[2m', `Build completed at ${new Date()}`);
 			}
 		);
 	};
