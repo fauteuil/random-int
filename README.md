@@ -3,13 +3,16 @@
 A simple timestamp log after webpack builds.
 
 ```
-   ...
+  ...
 
-   Build completed at Thu Apr 26 2019 12:34:56 GMT+0800 (PDT)
+Build completed at Wed Jun 26 2019 19:13:22 GMT-0700 (Pacific Daylight Time)  
+
+  ...
 ```
 
 ## Installation
-`npm install webpack-build-timestamp --save-dev`
+`npm install webpack-build-timestamp --save-dev`  
+  or  
 `yarn add webpack-build-timestamp --save-dev`
 
 ## Usage
