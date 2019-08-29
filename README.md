@@ -1,13 +1,13 @@
-# **Async delay function**
+# **Async function delay**
 
-### Use async / await to delay calling a function until a specified time.
+### Using async / await, delay a function call with arguments and return the result.
 
 ## **Installation**
-> `npm install async-delay-function --save`    
+> `npm install async-function-delay --save`    
 
 or  
 
-> `yarn add async-delay-function`  
+> `yarn add async-function-delay`  
 
 ---
 ## **Syntax**
@@ -31,7 +31,7 @@ or
 
 
 ```
-import { asyncDelay } from "async-delay-function";
+import { asyncDelay } from "async-function-delay";
 ```
 
 ```  

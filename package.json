@@ -1,5 +1,5 @@
 {
-    "name": "async-delay-function",
+    "name": "async-function-delay",
     "version": "1.0.0",
     "author": {
         "name": "Dave Held",
@@ -7,13 +7,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fauteuil/async-delay-function.git"
+        "url": "https://github.com/fauteuil/async-function-delay.git"
     },
     "main": "index.js",
     "keywords": [
         "async",
-        "delay",
         "function",
+        "delay",
         "await",
         "setTimeout",
         "promise"
