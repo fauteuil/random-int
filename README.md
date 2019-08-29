@@ -12,7 +12,7 @@ or
 ---
 ## **Syntax**
 
-> **`asyncDelay(func, delay, ...args);`**
+> **`asyncFunctionDelay(func, delay, ...args);`**
 
 ### **Parameters**
   - `func`:   
@@ -24,14 +24,14 @@ or
 
 
 ### **Return value**  
-  - `asyncDelay` will return the result of the supplied function `func(...args)`, if any. 
+  - `asyncFunctionDelay` will return the result of the supplied function `func(...args)`, if any. 
 ---
 ## **Usage**
 ### To delay the execution of a function and await the result, pass the function, delay and optional arguments: 
 
 
 ```
-import { asyncDelay } from "async-function-delay";
+import { asyncFunctionDelay } from "async-function-delay";
 ```
 
 ```  
@@ -43,7 +43,7 @@ const myGreeting = "Hello";
 const myName = "Me";
 
 const myDelayedFunctionCaller = async () => {
-	const myDelayedResult = await asyncDelay(myFunction, 2000, myGreeting, myName);
+	const myDelayedResult = await asyncFunctionDelay(myFunction, 2000, myGreeting, myName);
 	console.log(myDelayedResult);
 } 
 ```
