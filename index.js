@@ -4,7 +4,7 @@
  * @param {*} timeout 
  * @param  {...any} args 
  */
-export const asyncDelay = async (func, timeout, ...args) => {
+const asyncDelay = async (func, timeout, ...args) => {
 	// Wrap the timeout and function call in a promise.
 	await new Promise(resolve => setTimeout(resolve, timeout));
 	// Call the valid function with the supplied arguments.
@@ -12,3 +12,5 @@ export const asyncDelay = async (func, timeout, ...args) => {
 		return func(...args);
 	}
 };
+
+module.exports = { asyncDelay };
