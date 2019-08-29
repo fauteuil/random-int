@@ -1,19 +1,22 @@
 {
-    "name": "webpack-build-timestamp",
-    "version": "1.0.4",
+    "name": "async-delay-function",
+    "version": "1.0.0",
     "author": {
         "name": "Dave Held",
         "email": "dav3h3ld@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fauteuil/webpack-build-timestamp.git"
+        "url": "https://github.com/fauteuil/async-delay-function.git"
     },
     "main": "index.js",
     "keywords": [
-        "plugin",
-        "timestamp",
-        "webpack"
+        "async",
+        "delay",
+        "function",
+        "await",
+        "setTimeout",
+        "promise"
     ],
     "license": "MIT"
 }

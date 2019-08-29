@@ -1,12 +1,14 @@
-class BuildTimestampPlugin {
-	apply(compiler) {
-		compiler.hooks.done.tap(
-			"BuildTimestampPlugin",
-			(compilation, callback) => {
-				console.log('\x1b[2m', `Build completed at ${new Date()}`);
-			}
-		);
-	};
-}
-
-module.exports = { BuildTimestampPlugin };
+/**
+ * Delay the function call by the specified timeout length.
+ * @param {*} func 
+ * @param {*} timeout 
+ * @param  {...any} args 
+ */
+export const asyncDelay = async (func, timeout, ...args) => {
+	// Wrap the timeout and function call in a promise.
+	await new Promise(resolve => setTimeout(resolve, timeout));
+	// Call the valid function with the supplied arguments.
+	if (func && typeof func === 'function') {
+		return func(...args);
+	}
+};
