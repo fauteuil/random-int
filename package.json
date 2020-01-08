@@ -1,22 +1,19 @@
 {
-    "name": "async-function-delay",
-    "version": "1.0.3",
+    "name": "random-int",
+    "version": "1.0.0",
     "author": {
         "name": "Dave Held",
         "email": "dav3h3ld@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/fauteuil/async-function-delay.git"
+        "url": "https://github.com/fauteuil/random-int.git"
     },
     "main": "index.js",
     "keywords": [
-        "async",
-        "function",
-        "delay",
-        "await",
-        "setTimeout",
-        "promise"
+        "random",
+        "integer",
+        "math"
     ],
     "license": "MIT"
 }

@@ -1,16 +1,8 @@
 /**
- * Delay the function call by the specified timeout length.
- * @param {*} func 
- * @param {*} timeout 
- * @param  {...any} args 
+ * Generate a random integer within the specified range, with low and high limits included.
+ * @param {*} low 
+ * @param {*} high 
  */
-const asyncFunctionDelay = async (func, timeout, ...args) => {
-	// Wrap the timeout and function call in a promise.
-	await new Promise(resolve => setTimeout(resolve, timeout));
-	// Call the valid function with the supplied arguments.
-	if (func && typeof func === 'function') {
-		return func(...args);
-	}
-};
+const randomInt = (low = 1,high = 100) => Math.floor(Math.random() * (high - low + 1) ) + low;
 
-module.exports = { asyncFunctionDelay };
+module.exports = { randomInt };

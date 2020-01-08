@@ -1,62 +1,52 @@
-# **Async function delay**
+# **Random integer**
 
-### Using async / await, delay a function call with arguments and return the result.
+### Generate a random integer in Javascript (ES6), within a given range. 
+This package is based on [an example from the W3Schools Javascript Random page](https://www.w3schools.com./js/js_random.asp "W3Schools JavaScript Random").
 
 ## **Installation**
-> `npm install async-function-delay --save`    
+> `npm install random-int --save`    
 
 or  
 
-> `yarn add async-function-delay`  
+> `yarn add random-int`  
 
 ---
 ## **Syntax**
 
-> **`asyncFunctionDelay(func, delay, ...args);`**
+> **`randomInt(low, high);`**
 
 ### **Parameters**
-  - `func`:   
-  The function to be executed
-  - `delay`:   
-  The number of milliseconds passed the `setTimeout` call.
-  - `args`:   
-  An array of arguments passed to the `func`.
+  - `low`:   
+  Minimum value (included). This is optional and defaults to `1`.
+  - `high`:   
+  Maximum value (included). This is optional and defaults to `100`.
 
 
 ### **Return value**  
-  - `asyncFunctionDelay` will return the result of the supplied function `func(...args)`, if any. 
+  - `randomInt` will return a randomly generated Integer within and including the low/high limits. 
 ---
 ## **Usage**
-### To delay the execution of a function and await the result, pass the function, delay and optional arguments: 
+### To delay the execution of a function and await the result, pass the optional `low` and `high` arguments: 
 
-**Import the `asyncFunctionDelay` function**
+**Import the `randomInt` function**
 
 ```
-import { asyncFunctionDelay } from "async-function-delay";
+import { randomInt } from "random-int";
 ```
 or
 ```
-const { asyncFunctionDelay } = require("async-function-delay")
+const { randomInt } = require("random-int")
 ```
-**Sample implementation**
+**Sample implementations**
 ```  
-const myFunction = (greeting, name) => {
-	return `${greeting}, from ${name}!`;
-};
+// Returns a random integer between default limits of 1 and 100, inclusive.
+const myRandomInteger = randomInt();
 
-const myGreeting = "Hello";
-const myName = "Me";
-
-const myDelayedFunctionCaller = async () => {
-	const myDelayedResult = await asyncFunctionDelay(myFunction, 2000, myGreeting, myName);
-	console.log(myDelayedResult);
-} 
-```
-**Execute the code**
-```
-// Logs "Hello, from Me!" to the console after 2 seconds.
-myDelayedFunctionCaller();
+// Returns a random integer between 1 and 10, inclusive.
+const myRandomInteger = randomInt(1, 10);
 ```
 ---
 ## **References**  
- - [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function "async funcrion")
+ - [W3Schools Javascript Random](https://www.w3schools.com/js/js_random.asp "W3Schools Javascript Random")
+ - [MDN Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random "MDN Math.random")
+ - [MDN Math.floor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor "MDN Math.floor")
