@@ -17,16 +17,15 @@ or
 
 ### **Parameters**
   - `low`:   
-  Minimum value (included). This is optional and defaults to `1`.
+  Optional minimum value (included). This is defaults to `1`.
   - `high`:   
-  Maximum value (included). This is optional and defaults to `100`.
+  Optional maximum value (included). This is defaults to `100`.
 
 
 ### **Return value**  
   - `randomInt` will return a randomly generated Integer within and including the low/high limits. 
 ---
 ## **Usage**
-### To delay the execution of a function and await the result, pass the optional `low` and `high` arguments: 
 
 **Import the `randomInt` function**
 
