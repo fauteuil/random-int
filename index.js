@@ -12,4 +12,4 @@ const randomInt = (low = 1, high = 100) => {
 	return Math.floor(Math.random() * (high - low + 1)) + low;
 };
 
-module.exports = { randomInt };
+module.exports = randomInt ;

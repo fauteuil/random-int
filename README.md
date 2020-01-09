@@ -30,11 +30,11 @@ or
 **Import the `randomInt` function**
 
 ```
-import { randomInt } from "random-int";
+import randomInt from "random-int";
 ```
 or
 ```
-const { randomInt } = require("random-int")
+const randomInt = require("random-int")
 ```
 **Sample implementations**
 ```  
