@@ -1,15 +1,16 @@
+// Defaults
+const defaultLow = 1;
+const defaultHigh = 100;
+
 /**
- * Generate a random integer within the specified range, with low and high limits included.
- * @param {number} low 
- * @param {number} high 
+ * Generate a random integer within the specified range, fall back to defaults.
+ * @param {number} low
+ * @param {number} high
  */
-const randomInt = (low = 1, high = 100) => {
-	// Guard against non-numeric values: set NaNs to defaults.
-	if (isNaN(low)) { low = 1 };
-	if (isNaN(high)) { high = 100 };
-	// Maybe overkill, but return -1 if high is less than low.
-	if (high > low) { return -1 };
-	return Math.floor(Math.random() * (high - low + 1)) + low;
+const randomInt = (low, high) => {
+  const l = !isNaN(low) ? Number(low) : defaultLow;
+  const h = !isNaN(high) ? Number(high) : Math.max(l, defaultHigh);
+  return Math.floor(Math.random() * (h - l + 1)) + l;
 };
 
-module.exports = randomInt ;
+module.exports = randomInt;
