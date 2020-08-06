@@ -25,7 +25,7 @@ or
 
 ### **Return value**  
 
-- `randomInt` will return a randomly generated `Integer` within and including the `low` and `high` limits.
+- `randomInt` will return a randomly generated `Integer`, *including* the `low` and `high` limits.
 
 ---
 
@@ -34,13 +34,13 @@ or
 **Import the `randomInt` function**
 
 ```
-import randomInt from "@dmhtoo/random-int";
+import { randomInt } from "@dmhtoo/random-int";
 ```
 
 or
 
 ```
-const randomInt = require("@dmhtoo/random-int")
+const { randomInt } = require("@dmhtoo/random-int")
 ```
 
 **Sample implementations**
