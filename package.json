@@ -1,26 +1,37 @@
 {
   "name": "@dmhtoo/random-int",
-  "version": "2.0.1",
-  "author": "Dave Held <dav3h3ld@gmail.com>",
+  "version": "2.1.0",
+  "author": {
+    "name": "Dave Held",
+    "email": "dav3h3ld@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fauteuil/random-int.git"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
-    "random",
     "integer",
-    "math"
+    "math",
+    "number",
+    "random"
   ],
   "license": "MIT",
-  "description": "### Generate a random integer in Javascript (ES6), within a given range.",
+  "description": "Generate a random integer in Javascript (ES6), within a given range.",
   "bugs": {
     "url": "https://github.com/fauteuil/random-int/issues"
   },
   "homepage": "https://github.com/fauteuil/random-int#readme",
   "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
